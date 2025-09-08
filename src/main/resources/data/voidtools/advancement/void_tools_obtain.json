@@ -1,0 +1,38 @@
+{
+  "display": {
+    "icon": {
+      "id": "voidtools:void_axe"
+    },
+    "title": {
+      "translate": "advancements.tools_obtain.t"
+    },
+    "description": {
+      "translate": "advancements.tools_obtain.d"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "void_block_obtain_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "voidtools:void_pick",
+              "voidtools:void_axe",
+              "voidtools:void_sword",
+              "voidtools:void_shovel"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 550
+  },
+  "parent": "voidtools:void_ingot_obtain"
+}

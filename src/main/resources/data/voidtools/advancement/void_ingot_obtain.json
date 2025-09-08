@@ -1,0 +1,35 @@
+{
+  "display": {
+    "icon": {
+      "id": "voidtools:void_ingot"
+    },
+    "title": {
+      "translate": "advancements.ingot_obtain.t"
+    },
+    "description": {
+      "translate": "advancements.ingot_obtain.d"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "ingot_obtain_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "voidtools:void_ingot"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 40
+  },
+  "parent": "voidtools:void_shard_obtain"
+}

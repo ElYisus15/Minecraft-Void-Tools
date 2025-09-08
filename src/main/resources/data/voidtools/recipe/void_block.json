@@ -1,0 +1,17 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "voidtools:void_ingot"
+    }
+  },
+  "result": {
+    "id": "voidtools:void_block",
+    "count": 1
+  }
+}

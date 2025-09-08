@@ -1,0 +1,33 @@
+modLoader="javafml" #mandatory
+loaderVersion="${loader_version_range}" #mandatory
+license="All Rights Reserved"
+
+[[mods]]
+modId="voidtools"
+version="1.0"
+displayName="Void Tools"
+displayURL = "https://modrinth.com/project/void-tools"
+logoFile = "logo.png"
+authors="ElYisus14"
+description='''This mod adds some "Void Tools", that are hard to get, good luck ;)'''
+
+[[dependencies.voidtools]]
+    modId="neoforge"
+    type="required"
+    versionRange="[21.1.206,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.voidtools]]
+    modId="minecraft"
+    type="required"
+    versionRange="[1.21.1]"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.voidtools]]
+modId="powah"
+type="required"
+versionRange="6.2.6"
+ordering="NONE"
+side="BOTH"

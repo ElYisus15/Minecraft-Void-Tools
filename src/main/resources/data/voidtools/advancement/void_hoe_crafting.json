@@ -1,0 +1,35 @@
+{
+  "display": {
+    "icon": {
+      "id": "voidtools:void_hoe"
+    },
+    "title": {
+      "translate": "advancements.hoe_crafting.t"
+    },
+    "description": {
+      "translate": "advancements.hoe_crafting.d"
+    },
+    "frame": "challenge",
+    "show_toast": false,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "void_hoe_crafting_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "voidtools:void_hoe"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 2045
+  },
+  "parent": "voidtools:void_tools_obtain"
+}

@@ -1,0 +1,35 @@
+{
+  "display": {
+    "icon": {
+      "id": "voidtools:void_shard"
+    },
+    "title": {
+      "translate": "advancements.shard_obtain.t"
+    },
+    "description": {
+      "translate": "advancements.shard_obtain.d"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "shard_obtain_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "voidtools:void_shard"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 160
+  },
+  "parent": "voidtools:dispname"
+}

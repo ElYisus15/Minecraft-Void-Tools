@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "voidtools:void_shard"
+    }
+  },
+  "result": {
+    "id": "voidtools:void_ingot",
+    "count": 1
+  }
+}

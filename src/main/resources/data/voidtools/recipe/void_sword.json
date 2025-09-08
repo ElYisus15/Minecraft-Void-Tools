@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    " a ",
+    " b "
+  ],
+  "key": {
+    "a": {
+      "item": "voidtools:void_ingot"
+    },
+    "b": {
+      "item": "voidtools:void_rod"
+    }
+  },
+  "result": {
+    "id": "voidtools:void_sword",
+    "count": 1
+  }
+}

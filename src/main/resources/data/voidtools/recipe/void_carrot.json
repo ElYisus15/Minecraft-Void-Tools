@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "voidtools:void_shard"
+    },
+    "b": {
+      "item": "minecraft:golden_carrot"
+    }
+  },
+  "result": {
+    "id": "voidtools:void_carrot",
+    "count": 1
+  }
+}

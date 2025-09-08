@@ -1,0 +1,35 @@
+{
+  "display": {
+    "background": "voidtools:textures/block/void_block.png",
+    "icon": {
+      "id": "voidtools:void_pick"
+    },
+    "title": {
+      "translate": "advancements.dispname.t"
+    },
+    "description": {
+      "translate": "advancements.dispname.d"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "dispname_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:crafting_table"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0
+  }
+}

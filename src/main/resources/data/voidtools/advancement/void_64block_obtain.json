@@ -1,0 +1,38 @@
+{
+  "display": {
+    "icon": {
+      "id": "voidtools:void_block"
+    },
+    "title": {
+      "translate": "advancements.64block_obtain.t"
+    },
+    "description": {
+      "translate": "advancements.64block_obtain.d"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "void_block_obtain_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "voidtools:void_block"
+            ],
+            "count": {
+              "min": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 448378220
+  },
+  "parent": "voidtools:void_ingot_obtain"
+}
