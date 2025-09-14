@@ -4,9 +4,10 @@ license="All Rights Reserved"
 
 [[mods]]
 modId="voidtools"
-version="1.0"
+version="1.1"
 displayName="Void Tools"
-displayURL = "https://modrinth.com/project/void-tools"
+displayURL = "https://modrinth.com/mod/void-tools"
+updateJSONURL = ""
 logoFile = "logo.png"
 authors="ElYisus14"
 description='''This mod adds some "Void Tools", that are hard to get, good luck ;)'''

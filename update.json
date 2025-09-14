@@ -1,0 +1,11 @@
+{
+  "homepage": "https://modrinth.com/mod/void-tools",
+  "1.21.1": {
+    "<modversion>": ""
+  },
+  "promos": {
+    "<mcversion>-latest": "<modversion>",
+    "<mcversion>-recommended": "<modversion>",
+
+  }
+}
