@@ -1,27 +1,27 @@
 {
   "display": {
     "icon": {
-      "id": "voidtools:void_shard"
+      "id": "voidtools:void_multitool"
     },
     "title": {
-      "translate": "advancements.shard_obtain.t"
+      "translate": "advancements.multitool_crafting.t"
     },
     "description": {
-      "translate": "advancements.shard_obtain.d"
+      "translate": "advancements.multitool_crafting.d"
     },
-    "frame": "task",
+    "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": true,
-    "hidden": false
+    "hidden": true
   },
   "criteria": {
-    "shard_obtain_0": {
+    "void_hoe_crafting_0": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "voidtools:void_shard"
+              "voidtools:void_multitool"
             ]
           }
         ]
@@ -29,7 +29,7 @@
     }
   },
   "rewards": {
-    "experience": 160
+    "experience": 315
   },
-  "parent": "voidtools:dispname"
+  "parent": "voidtools:void_tools_obtain"
 }

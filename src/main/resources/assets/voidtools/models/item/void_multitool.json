@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "voidtools:item/void_hoe"
+    "layer0": "voidtools:item/void_multitool"
   }
 }

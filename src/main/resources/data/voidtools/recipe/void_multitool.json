@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "cac",
+    "cb ",
+    " b "
+  ],
+  "key": {
+    "a": {
+      "item": "voidtools:void_block"
+    },
+    "b": {
+      "item": "voidtools:void_rod"
+    },
+    "c": {
+      "item": "voidtools:void_ingot"
+    }
+  },
+  "result": {
+    "id": "voidtools:void_multitool",
+    "count": 1
+  }
+}

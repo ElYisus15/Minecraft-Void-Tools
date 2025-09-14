@@ -1,5 +1,6 @@
 package com.elyisus14.voidtools;
 
+import static com.elyisus14.voidtools.ToolTags.MULTITOOL_TAGS;
 import static com.elyisus14.voidtools.ToolTiers.VOID_TIER;
 import com.elyisus14.voidtools.Food.VoidApple;
 import com.elyisus14.voidtools.Food.VoidCarrot;
@@ -23,7 +24,6 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.ModContainer;
-import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
@@ -68,10 +68,11 @@ public class VoidTools {
 
 //Items
     public static final DeferredItem<Item> VOID_INGOT = ITEMS.registerSimpleItem("void_ingot", new Item.Properties().rarity(Rarity.EPIC));
-    public static final DeferredItem<Item> VOID_SHARD = ITEMS.registerSimpleItem("void_shard", new Item.Properties().rarity(Rarity.EPIC));
+    public static final DeferredItem<Item> VOID_FRAGMENT = ITEMS.registerSimpleItem("void_fragment", new Item.Properties().rarity(Rarity.EPIC));
     public static final DeferredItem<Item> VOID_ROD = ITEMS.registerSimpleItem("void_rod", new Item.Properties().rarity(Rarity.EPIC));
 
 //Tools
+    public static final DeferredHolder<Item, DiggerItem> VOID_MULTITOOL = ITEMS.register("void_multitool", () -> new Multitool(VOID_TIER, MULTITOOL_TAGS, new Item.Properties().rarity(Rarity.EPIC).component(DataComponents.UNBREAKABLE, new Unbreakable(true)).attributes(DiggerItem.createAttributes(VOID_TIER, 15, 7f)).setNoRepair().fireResistant()));
     public static final Supplier<SwordItem> VOID_SWORD = ITEMS.register("void_sword", () -> new SwordItem(VOID_TIER, new Item.Properties().rarity(Rarity.EPIC).attributes(SwordItem.createAttributes(VOID_TIER, 20, 9f)).setNoRepair().fireResistant().component(DataComponents.UNBREAKABLE, new Unbreakable(true))));
     public static final Supplier<PickaxeItem> VOID_PICK = ITEMS.register("void_pick", () -> new PickaxeItem(VOID_TIER, new Item.Properties().rarity(Rarity.EPIC).attributes(PickaxeItem.createAttributes(VOID_TIER, 14, 8f)).setNoRepair().fireResistant().component(DataComponents.UNBREAKABLE, new Unbreakable(true))));
     public static final Supplier<ShovelItem> VOID_SHOVEL = ITEMS.register("void_shovel", () -> new ShovelItem(VOID_TIER, new Item.Properties().rarity(Rarity.EPIC).attributes(ShovelItem.createAttributes(VOID_TIER, 11, 6f)).setNoRepair().fireResistant().component(DataComponents.UNBREAKABLE, new Unbreakable(true))));
@@ -90,8 +91,9 @@ public class VoidTools {
                 output.accept(VOID_PICK.get());
                 output.accept(VOID_AXE.get());
                 output.accept(VOID_HOE.get());
+                output.accept(VOID_MULTITOOL.get());
                 output.accept(VOID_ROD.get());
-                output.accept(VOID_SHARD.get());
+                output.accept(VOID_FRAGMENT.get());
                 output.accept(VOID_INGOT.get());
                 output.accept(VOID_BLOCK_ITEM.get());
                 output.accept(VOID_APPLE.get());
@@ -102,7 +104,6 @@ public class VoidTools {
     // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
     public VoidTools(IEventBus modEventBus, ModContainer modContainer) {
         // Register the commonSetup method for modloading
-
         BLOCKS.register(modEventBus);
         ITEMS.register(modEventBus);
         CREATIVE_MODE_TABS.register(modEventBus);
@@ -141,6 +142,7 @@ public class VoidTools {
             event.accept((ItemLike) VOID_PICK);
             event.accept((ItemLike) VOID_AXE);
             event.accept((ItemLike) VOID_HOE);
+            event.accept(VOID_MULTITOOL.get());
         }
         if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
             event.accept((ItemLike) VOID_APPLE);

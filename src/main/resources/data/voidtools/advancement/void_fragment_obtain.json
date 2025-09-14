@@ -1,13 +1,13 @@
 {
   "display": {
     "icon": {
-      "id": "voidtools:void_ingot"
+      "id": "voidtools:void_fragment"
     },
     "title": {
-      "translate": "advancements.ingot_obtain.t"
+      "translate": "advancements.fragment_obtain.t"
     },
     "description": {
-      "translate": "advancements.ingot_obtain.d"
+      "translate": "advancements.fragment_obtain.d"
     },
     "frame": "task",
     "show_toast": true,
@@ -15,13 +15,13 @@
     "hidden": false
   },
   "criteria": {
-    "ingot_obtain_0": {
+    "fragment_obtain_0": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "voidtools:void_ingot"
+              "voidtools:void_fragment"
             ]
           }
         ]
@@ -29,7 +29,7 @@
     }
   },
   "rewards": {
-    "experience": 40
+    "experience": 160
   },
-  "parent": "voidtools:void_fragment_obtain"
+  "parent": "voidtools:dispname"
 }
